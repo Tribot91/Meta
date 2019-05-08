@@ -1,0 +1,343 @@
+:root {
+  --theme-main: #2bbbad;
+  --theme-secondary: #e4eceb;
+  --theme-nav: #373330;
+  --theme-nav-icon: #aaa6a0;
+  --theme-line: #726a64; /* Bunu silmemiz gerekebilir sonradan, tek yerde kullaniliyor*/
+  --theme-window: white;
+  --theme-background: white;
+}
+
+html,
+body,
+#root,
+.h100 {
+  height: 100%;
+}
+
+.w100 {
+  width: 100%;
+}
+
+.full-height {
+  height: calc(100vh - 135px) !important;
+}
+
+td,
+th {
+  padding: 10px 5px !important;
+}
+
+.datepicker-row td,
+.datepicker-row th {
+  padding: 0% !important;
+}
+
+.row-override-crm {
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+}
+
+.mb0 {
+  margin-bottom: 0;
+}
+
+.background {
+  padding: 53px 20px 0 95px;
+  height: 100%;
+  background: var(--theme-background);
+}
+
+.logo {
+  color: var(--theme-main) !important;
+  padding-left: 10px !important;
+  border-bottom: 1px solid var(--theme-line);
+  width: 50px;
+  height: 100%;
+}
+
+.icon {
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0;
+  font-size: 10px;
+  color: var(--theme-nav-icon);
+}
+
+.page-tab-icon {
+  flex-direction: row;
+  padding: 13px 15px;
+  line-height: 25px !important;
+  font-size: 14px;
+}
+.icon:hover {
+  background: white;
+  color: var(--theme-line);
+}
+
+.fa {
+  font-size: 16px;
+}
+
+.pc-sidenav {
+  width: 75px;
+  background: var(--theme-nav);
+  box-shadow: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0px 52px 2px 2px rgba(0, 0, 0, 0.34);
+}
+
+.sidenav {
+  padding-top: 52px;
+  padding-bottom: 0;
+  height: 100%;
+}
+
+.nav {
+  background-color: var(--theme-nav);
+  box-shadow: none;
+}
+
+.navbar-fixed {
+  z-index: 1000;
+}
+
+.nav-wrapper {
+  padding: 0 13px;
+  background: var(--theme-nav);
+  box-shadow: 78px 2px 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+.activeTab {
+  background: white;
+  color: var(--theme-nav);
+  font-weight: bold;
+}
+
+.activeTab .fa {
+  color: var(--theme-nav);
+}
+
+.link {
+  color: var(--theme-nav-icon);
+}
+
+.dropdown-content li > a {
+  color: var(--theme-nav-icon);
+  text-align: center;
+}
+
+.centerAndEvenly {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.table {
+  font-size: 13px;
+}
+
+.shopAndButtons {
+  min-height: 350px;
+  height: 98%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.buttons-list {
+  margin: 15px;
+}
+
+.shopBtns {
+  border: 2px solid var(--theme-main);
+  background: white;
+  color: var(--theme-main);
+  font-weight: bold;
+}
+
+.shopBtns:hover {
+  border: 2px solid transparent;
+  background-color: var(--theme-main);
+  color: white;
+}
+
+.btn-floating {
+  background-color: var(--theme-main) !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75px !important;
+  height: 75px !important;
+  padding: 0 0 16px 2px;
+}
+
+.border {
+  /* border: 1px solid lightgray; */
+  border-radius: 5px;
+  border-collapse: separate !important;
+  box-shadow: 0 0 10px -1px rgba(0, 0, 0, 0.14);
+  background: var(--theme-window);
+}
+
+.tabs .tab a {
+  color: var(--theme-main);
+  padding: 0 10px;
+}
+
+/* .tabs .tab a,
+.tabs .tab a:hover,
+.tabs .tab a.active {
+  color: var(--theme-main) !important;
+} */
+
+.tabs .tab a.active {
+  color: var(--theme-main);
+  font-weight: bold;
+}
+
+.tabs .tab a:focus,
+.tabs .tab a:focus.active {
+  background: #e4eceb !important;
+}
+
+.tabs .indicator {
+  /* background: var(--theme-line) !important; */
+  background: var(--theme-main) !important;
+}
+
+.input-field {
+  padding: 0 !important;
+  margin: 0.5rem 0 !important;
+}
+
+label {
+  left: 0 !important;
+  /* min-width: 150px !important; */
+}
+
+.chooseAmountOnModal {
+  width: 50px !important;
+  margin-right: 100px !important;
+}
+
+.activeSelection {
+  font-weight: bold;
+  background: lightblue !important;
+  transition: background-color 0.5s;
+}
+
+.tooltip {
+  background: grey;
+  color: white;
+  border-radius: 50%;
+  padding: 0 5px;
+  margin-left: 5px;
+  font-size: 10px;
+}
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: unset;
+}
+
+.modal .row {
+  margin-bottom: 0 !important;
+}
+
+.modal .modal-content:not(.datepicker-container) {
+  padding: 10px 24px;
+}
+
+.modal {
+  /* Select options-inin modalin disina cikmasini engelliyor ancak ekranin yuksekligi kuculunce pencere scrolled olmuyor */
+  overflow: visible;
+}
+
+.td-excel-mode {
+  background: lightblue !important;
+}
+
+.dealsRow {
+  padding: 0 !important;
+}
+
+/* -----------Star checkbox----------- */
+[type="checkbox"] + span:not(.lever):before,
+[type="checkbox"]:not(.filled-in) + span:not(.lever):after {
+  content: "\2606";
+  font-size: 40px;
+  border: none;
+  color: #ffcf00;
+  top: 3px;
+  left: -3px;
+}
+
+[type="checkbox"]:checked + span:not(.lever):before {
+  content: "\2605";
+  font-size: 40px;
+  border: none;
+  color: #ffcf00;
+  transform: rotate(70deg);
+}
+
+/* -----------Navbar height----------- */
+
+nav {
+  height: 50px;
+  line-height: 50px;
+}
+
+nav i,
+nav [class^="mdi-"],
+nav [class*="mdi-"],
+nav i.material-icons {
+  height: 50px;
+  line-height: 50px;
+}
+
+nav .button-collapse i {
+  height: 50px;
+  line-height: 50px;
+}
+
+@media only screen and (min-width: 601px) {
+  nav,
+  nav .nav-wrapper i,
+  nav a.button-collapse,
+  nav a.button-collapse i {
+    height: 50px !important;
+    line-height: 50px !important;
+  }
+  nav,
+  nav .nav-wrapper i,
+  nav a.sidenav-trigger,
+  nav a.sidenav-trigger i {
+    height: 50px !important;
+    line-height: 50px !important;
+  }
+}
+/* ---------------------- */
+@media only screen and (max-height: 600px) {
+  .modal {
+    /* Urunlerde urun update ederken modalin yuksekligi cok dusuk ekranlarda bozuk gorunmesini engelliyor */
+    overflow: auto !important;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .background {
+    padding-left: 10px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .background {
+    padding-right: 0px;
+  }
+}
